@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #003366;
+            padding: 10px 20px;
+            color: white;
+        }
+        .navbar .logo {
+            font-size: 24px;
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .header {
+            position: relative;
+            height: 400px;
+            background: url('background-blur-clean-531880.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px; 
+            font-family: Arial, sans-serif;
+        }
+        .header button {
+            background-color: #004080;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 4px;       
+            transition: background-color 0.3s;
+        }
+        .header button:hover {
+    background-color: #003366; /* Darker shade for hover effect */
+}
+
+.header button:active {
+    background-color: #002244; /* Even darker shade for when the button is pressed */
+}
+.posts {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin: 20px;
+}
+
+.post { 
+    width: 48%;
+    flex: 0 0 calc(50% - 20px); /* Width of each post minus margin */
+    margin: 10px; 
+    background-color: #e6f0ff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+        .post img {
+            width: 100%;
+            height: auto;
+        }
+        .footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .footer .social-icons {
+            margin: 10px 0;
+        }
+        .footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Logo</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Prices</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <h1>Your website has a video background!</h1>
+        <button>Discover more</button>
+    </div>
+
+    <div class="posts">
+        <div class="post">
+            <img src="147017.jpg" alt="Post 1">
+            <p>Post 1 Description</p>
+        </div>
+        <div class="post">
+            <img src="OfficeZoom_0001.webp" alt="Post 2">
+            <p>Post 2 Description</p>
+        </div>
+        <div class="post">
+            <img src="wp8477836.webp" alt="Post 3">
+            <p>Post 3 Description</p>
+        </div>
+        <div class="post">
+            <img src="VIVA-background-office-02.jpeg" alt="Post 4">
+            <p>Post 4 Description</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Your Website
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div>Contact Us</div>
+    </div>
+</body>
+</html>
